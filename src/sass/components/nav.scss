@@ -1,0 +1,92 @@
+.header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.burger {
+		display: none;
+	}
+
+	.logo {
+		margin: 4em 2em 4em 4em;
+	}
+
+	.navigation {
+		position: relative;
+		background-color: #ffffff09;
+		backdrop-filter: blur(30px);
+		max-width: 830px;
+
+		.decoration-element {
+			position: relative;
+			top: 2.9em;
+			left: -12em;
+			transform: translate(-50%, -50%);
+			width: 473px;
+			// width 473 px i zrobić to responsywne
+			border: 1px solid #ffffff2d;
+		}
+
+		.nav {
+			position: relative;
+			display: flex;
+			margin: 1.3em 9em 0em 8em;
+			gap: 52px;
+
+			.numbers {
+				margin-right: 14px;
+				font-weight: bold;
+			}
+
+			&__item {
+				position: relative;
+				display: flex;
+				padding-top: 1.1em;
+				padding-bottom: 2.3em;
+				font-size: 1.6rem;
+				color: #fff;
+				letter-spacing: 3px;
+				text-decoration: none;
+				text-transform: uppercase;
+				cursor: pointer;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: 4.5em;
+					height: 3px;
+					width: 100%;
+					background-color: #979797;
+					opacity: 0;
+					transition: 0.2s all;
+				}
+// zająć się podkreśleniem na biało
+                &::after {
+					content: '';
+					position: absolute;
+					top: 4.5em;
+					height: 3px;
+					width: 100%;
+					background-color: #fff;
+					opacity: 0;
+					transition: .2s all;
+				}
+
+                &:focus::after {
+                    opacity: 1;
+                }
+
+
+				&:hover::before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1380px) {
+	.decoration-element {
+		display: none;
+	}
+}
