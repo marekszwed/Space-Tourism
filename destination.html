@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Space Tourism</title>
+		<script
+			src="https://kit.fontawesome.com/f0de3a3824.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- <link rel="stylesheet" href="./src/sass/main.scss"> -->
+	</head>
+	<body>
+		<div class="destination wrapper section">
+			<header id="home" class="header">
+				<div class="logo">
+					<img
+						src="./src/assets/shared/logo.svg"
+						alt="space tourism logo"
+						class="logo__img"
+					/>
+				</div>
+				<!-- <button class="burger">
+					<img src="./src/assets/shared/icon-hamburger.svg" alt="open menu icon" class="burger-btn">
+					<img src="./src/assets/shared/icon-close.svg" alt="close-btn">
+				</button> -->
+				<div class="navigation">
+					<hr class="decoration-element" />
+					<div class="nav">
+						<a href="index.html" class="nav__item"
+							><span class="numbers">00</span>home</a
+						>
+						<a href="destination.html" class="nav__item"
+							><span class="numbers">01</span>destination</a
+						>
+						<a href="crew.html" class="nav__item"
+							><span class="numbers">02</span>crew</a
+						>
+						<a href="technology.html" class="nav__item"
+							><span class="numbers">03</span>technology</a
+						>
+					</div>
+				</div>
+			</header>
+			<!-- tutaj pisać !!!!!!!!!!! -->
+			<h5 class="pick"><span class="number">01</span>pick your destination</h5>
+
+			<div class="planets">
+				<div class="left-side">
+					<!-- <div class="left-side__planet-img"></div> -->
+					<img class="left-side__planet-img" src="./src/assets/destination/image-moon.png" alt="moon picture">
+				</div>
+
+				<div class="right-side">
+					<div class="subnav">
+						<div class="subnav__nav">
+							<a href="#" class="subnav__nav--item active">moon</a>
+							<a href="#" class="subnav__nav--item">mars</a>
+							<a href="#" class="subnav__nav--item">europa</a>
+							<a href="#" class="subnav__nav--item">titan</a>
+						</div>
+					</div>
+
+					<h2 class="right-side__planet-name">Moon</h2>
+					<p class="right-side__description">
+						See our planet as you’ve never seen it before. A perfect relaxing
+						trip away to help regain perspective and come back refreshed. While
+						you’re there, take in some history by visiting the Luna 2 and Apollo
+						11 landing sites.
+					</p>
+					<hr class="planets-line" />
+					<div class="distance">
+						<div class="distance__avg">
+							<p class="distance__avg--text">Avg. distance</p>
+							<p class="distance__avg--number">384,400 km</p>
+						</div>
+						<div class="distance__time">
+							<p class="distance__time--text">Est. travel time</p>
+							<p class="distance__time--number">3 days</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="module" src="./src/ts/main.ts"></script>
+	</body>
+</html>
