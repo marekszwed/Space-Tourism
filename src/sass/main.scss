@@ -79,7 +79,7 @@ body {
 .titan {
 	background-image: url('../assets/destination/image-titan.png');
 }
-// default fonr-size
+// default font-size
 h1 {
 	font-size: 15rem;
 }
@@ -117,11 +117,11 @@ h5 {
 	color: var(--underline-hover);
 }
 
-// ////
 
-// HOME
+
+// HOME///////////
 .main-home {
-	// start with "HERO" section and style main title and description
+	
 	.hero {
 		display: flex;
 		justify-content: space-evenly;
@@ -194,8 +194,7 @@ h5 {
 		}
 	}
 }
-// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// DESTINATION///////////
+// DESTINATION///////////////////
 .destination {
 	position: relative;
 
@@ -220,6 +219,7 @@ h5 {
 
 			&__planet-img {
 				position: relative;
+				display: flex;
 				background-position: center;
 				background-repeat: no-repeat;
 				width: 445px;
@@ -335,7 +335,7 @@ h5 {
 	}
 }
 
-// CREW////////////////////////////////////////////////////////////////////////////////////////////////////////
+// CREW///////////////////////////////////////
 
 .crew {
 	position: relative;
@@ -413,8 +413,6 @@ h5 {
 				position: relative;
 				display: flex;
 				align-self: start;
-				// background-image: url('../assets/crew/image-douglas-hurley.png');
-
 				background-position-y: bottom;
 				background-repeat: no-repeat;
 				scale: 110%;
@@ -425,7 +423,7 @@ h5 {
 	}
 }
 
-// TEHCNOLOGY/////////////////////////////////////////////////////////////////////////////
+// TEHCNOLOGY/////////////////////////////
 
 .technology {
 	position: relative;
