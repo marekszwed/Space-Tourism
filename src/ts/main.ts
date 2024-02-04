@@ -1,5 +1,6 @@
 import '../sass/main.scss';
 import '../ts/destination'
+import '../ts/crew'
 
 const navItem = document.querySelectorAll('.nav__item');
 
