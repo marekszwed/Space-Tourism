@@ -1,30 +1,60 @@
+import jsonFile from '../files/data.json';
+
 const destinationNav = document.querySelectorAll('.subnav__nav--item');
-let elements = []
+
+let planetImage = document.querySelector('.left-side__planet-img') as HTMLImageElement;
+
+const planetName = document.querySelector('.right-side__planet-name') as HTMLElement;
+const planetDescription = document.querySelector('.right-side__description') as HTMLElement;
+
+const avgDistance = document.querySelector('.distance__avg--number') as HTMLElement;
+const avgTime = document.querySelector('.distance__time--number') as HTMLElement; 
+
+
+
 
 destinationNav.forEach((navItem) => {
 	navItem.addEventListener('click', (e) => {
 		e.preventDefault();
 
-		fetch("https://github.com/marekszwed/Space-Tourism/blob/main/src/files/data.json")
-        .then((res) => res.json())
-        .then((data) => {
-          for (let i = 0; i < data.destinations.length; i++) {
-            elements.push(data.destinations[i]);
-          }
-        }
-       );
-        
-
 		const menuItem = e.target as HTMLElement;
+		
 
 		switch (menuItem.innerText) {
-			case 'Moon':
+			case 'MOON':				
+				planetImage.src = "./src/assets/destination/image-moon.png"							
+				planetName.innerText = jsonFile.destinations[0].name
+				planetDescription.innerText = jsonFile.destinations[0].description
+				avgDistance.innerText = jsonFile.destinations[0].distance;
+				avgTime.innerText = jsonFile.destinations[0].travel
+				
 				break;
-			case 'Mars':
+
+			case 'MARS':			
+				planetImage.src = "./src/assets/destination/image-mars.png"					
+				planetName.innerText = jsonFile.destinations[1].name
+				planetDescription.innerText = jsonFile.destinations[1].description
+				avgDistance.innerText = jsonFile.destinations[1].distance;
+				avgTime.innerText = jsonFile.destinations[1].travel
+				
 				break;
-			case "Europa":
+
+			case 'EUROPA':
+				planetImage.src = "./src/assets/destination/image-europa.png"			
+				planetName.innerText = jsonFile.destinations[2].name
+				planetDescription.innerText = jsonFile.destinations[2].description
+				avgDistance.innerText = jsonFile.destinations[2].distance;
+				avgTime.innerText = jsonFile.destinations[2].travel		
+
 				break;
-			case "Titan":
+
+			case 'TITAN':		
+				planetImage.src = "./src/assets/destination/image-titan.png"
+				planetName.innerText = jsonFile.destinations[3].name
+				planetDescription.innerText = jsonFile.destinations[3].description
+				avgDistance.innerText = jsonFile.destinations[3].distance;
+				avgTime.innerText = jsonFile.destinations[3].travel
+				
 				break;
 
 			default:
