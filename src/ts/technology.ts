@@ -27,7 +27,7 @@ circles.forEach(btn => btn.addEventListener('click', ((e) => {
     if(circleBtn) {
         title.innerText = jsonFile.technology[circleBtnNumber -1].name
         description.innerText = jsonFile.technology[circleBtnNumber -1].description
-        image.src = `./src/assets/technology/image-${circleBtnNumber}-landscape.jpg`		
+        image.src = `./src/assets/technology/image-${circleBtnNumber}-portrait.jpg`		
     }
     
 
