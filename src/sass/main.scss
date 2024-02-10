@@ -117,11 +117,8 @@ h5 {
 	color: var(--underline-hover);
 }
 
-
-
 // HOME///////////
 .main-home {
-	
 	.hero {
 		display: flex;
 		justify-content: space-evenly;
@@ -271,8 +268,6 @@ h5 {
 							opacity: 1;
 						}
 					}
-
-					
 				}
 			}
 
@@ -344,7 +339,7 @@ h5 {
 	.members {
 		position: relative;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: center;
 
 		&__left {
@@ -353,7 +348,7 @@ h5 {
 			flex-direction: column;
 			align-items: flex-start;
 			margin-left: 6.5em;
-			margin-right: 81px;
+			// margin-right: 81px;
 
 			&--position {
 				margin-top: 69px;
@@ -413,11 +408,13 @@ h5 {
 				position: relative;
 				display: flex;
 				align-self: start;
-				background-position-y: bottom;
+				margin-right: 137px;
+				background-position-y: bottom 20px;
+				// background-position: top 50%;
 				background-repeat: no-repeat;
-				scale: 110%;
+				// scale: 100%;
 				height: 712px;
-				width: 568.07px;
+				// width: 568.07px;
 			}
 		}
 	}
@@ -459,12 +456,19 @@ h5 {
 					font-family: 'Bellefair', serif;
 					font-weight: normal;
 					font-size: 3.2rem;
+
 					color: #fff;
 					transition: 0.3s border;
+					cursor: pointer;
 				}
 
 				.circle:hover {
 					border: 1px solid #fff;
+				}
+
+				.circle-active {
+					background-color: #fff;
+					color: #000;
 				}
 			}
 
@@ -496,6 +500,19 @@ h5 {
 					color: #d0d6f9;
 					line-height: 3.2rem;
 				}
+			}
+		}
+
+		&__right {
+			position: relative;
+
+			&--vehicle-img {
+				position: relative;
+				display: flex;
+				background-position: center ;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 100%;
 			}
 		}
 	}
