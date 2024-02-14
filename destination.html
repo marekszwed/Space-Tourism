@@ -19,43 +19,49 @@
 		<!-- <link rel="stylesheet" href="./src/sass/main.scss"> -->
 	</head>
 	<body>
-		<div class="destination wrapper section">
-			<header id="home" class="header">
-				<div class="logo">
-					<img
-						src="./src/assets/shared/logo.svg"
-						alt="space tourism logo"
-						class="logo__img"
-					/>
+		<header id="home" class="header wrapper">
+			<div class="logo">
+				<img
+					src="./src/assets/shared/logo.svg"
+					alt="space tourism logo"
+					class="logo__img"
+				/>
+			</div>		
+			<div class="navigation">
+				<hr class="decoration-element" />
+				<div class="nav">
+					<a href="index.html" class="nav__item"
+						><span class="numbers">00</span>home</a
+					>
+					<a href="destination.html" class="nav__item"
+						><span class="numbers">01</span>destination</a
+					>
+					<a href="crew.html" class="nav__item"
+						><span class="numbers">02</span>crew</a
+					>
+					<a href="technology.html" class="nav__item"
+						><span class="numbers">03</span>technology</a
+					>
 				</div>
-				<!-- <button class="burger">
-					<img src="./src/assets/shared/icon-hamburger.svg" alt="open menu icon" class="burger-btn">
-					<img src="./src/assets/shared/icon-close.svg" alt="close-btn">
-				</button> -->
-				<div class="navigation">
-					<hr class="decoration-element" />
-					<div class="nav">
-						<a href="index.html" class="nav__item"
-							><span class="numbers">00</span>home</a
-						>
-						<a href="destination.html" class="nav__item"
-							><span class="numbers">01</span>destination</a
-						>
-						<a href="crew.html" class="nav__item"
-							><span class="numbers">02</span>crew</a
-						>
-						<a href="technology.html" class="nav__item"
-							><span class="numbers">03</span>technology</a
-						>
-					</div>
-				</div>
-			</header>
-			<!-- tutaj pisać !!!!!!!!!!! -->
-			<h5 class="pick"><span class="number">01</span>pick your destination</h5>
+			</div>
+		</header>
 
+		<div class="destination wrapper">
 			<div class="planets">
 				<div class="left-side">
-					<img class="left-side__planet-img" src="./src/assets/destination/image-moon.png" alt="planet picture">
+					<div class="left-side__number">
+						<h5 class="pick">
+							<span class="number">01</span>pick your destination
+						</h5>
+					</div>
+					<div class="left-side__planet">
+						<img
+						class="left-side__planet--img"
+						src="./src/assets/destination/image-moon.png"
+						alt="planet picture"
+					/>
+					</div>	
+					
 				</div>
 
 				<div class="right-side">
@@ -67,14 +73,16 @@
 							<a href="#" class="subnav__nav--item">titan</a>
 						</div>
 					</div>
+					<div class="right-side__planet">
+						<h2 class="right-side__planet--name">Moon</h2>
+						<p class="right-side__planet--description">
+							See our planet as you’ve never seen it before. A perfect relaxing
+							trip away to help regain perspective and come back refreshed.
+							While you’re there, take in some history by visiting the Luna 2
+							and Apollo 11 landing sites.
+						</p>
+					</div>
 
-					<h2 class="right-side__planet-name">Moon</h2>
-					<p class="right-side__description">
-						See our planet as you’ve never seen it before. A perfect relaxing
-						trip away to help regain perspective and come back refreshed. While
-						you’re there, take in some history by visiting the Luna 2 and Apollo
-						11 landing sites.
-					</p>
 					<hr class="planets-line" />
 					<div class="distance">
 						<div class="distance__avg">
