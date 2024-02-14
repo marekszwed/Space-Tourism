@@ -1,0 +1,100 @@
+.crew {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	// overflow: hidden;
+
+	// .meet-crew {
+	// 	position: relative;
+	// 	display: flex;
+	// 	top: 7em;
+	// }
+
+	.members {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-left: 4em;
+		gap: 8.1em;
+
+		&__left {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			margin-left: 6.5em;
+			// padding-bottom: 2em;
+			// margin-right: 81px;
+
+			&--position {
+				margin-top: 69px;
+				font-family: 'Bellefair', serif;
+				font-weight: normal;
+				text-transform: uppercase;
+				color: var(--underline-hover);
+			}
+
+			&--name {
+				margin-top: 15px;
+				font-family: 'Bellefair', serif;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+			&--text {
+				margin-top: 27px;
+				margin-bottom: 120px;
+				width: 444px;
+			}
+			.description {
+				padding-right: 3em;
+				font-family: 'Barlow', sans-serif;
+				font-weight: normal;
+				font-size: 1.6rem;
+				line-height: 3.2rem;
+			}
+
+			.buttons {
+				display: flex;
+				justify-content: space-between;
+				width: 132px;
+				margin-bottom: 2em;
+
+				.memberBtn {
+					width: 15px;
+					height: 15px;
+					padding: 0.2em;
+					border-radius: 50%;
+					background-color: #979797;
+					cursor: pointer;
+					transition: 0.3s background-color;
+				}
+
+				.memberBtn:hover {
+					background-color: #d4d4d4;
+				}
+
+				.active {
+					background-color: #fff;
+				}
+			}
+		}
+
+		&__right {
+			// margin-top: 20px;
+			&--member-img {
+				position: relative;
+				display: flex;
+				// align-self: flex-start;
+				margin-right: 137px;
+				// background-position-y: bottom 20px;
+				// background-position: top 50%;
+				background-repeat: no-repeat;
+				// scale: 100%;
+				// height: 712px;
+				// width: 568.07px;
+			}
+		}
+	}
+}

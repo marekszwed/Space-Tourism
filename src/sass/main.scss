@@ -1,4 +1,8 @@
 @import url(./components/nav.scss);
+@import url(./components/home.scss);
+@import url(./components/destination.scss);
+@import url(./components/crew.scss);
+@import url(./components/technology.scss);
 
 :root {
 	// primary colors
@@ -28,6 +32,7 @@ body {
 	font-family: 'Barlow Condensed', sans-serif;
 	background-color: #0b0d17;
 	color: white;
+	// height: 100vh;
 }
 
 .wrapper {
@@ -41,10 +46,11 @@ body {
 .crew,
 .technology {
 	position: relative;
+	display: flex;
 	background-position: center;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	width: 100vw;
+	background-size: cover;
+	// flex-direction: column;
+	// width: 100vw;
 	height: 100vh;
 }
 // backgrounds
@@ -104,8 +110,10 @@ h5 {
 .pick,
 .meet {
 	position: relative;
-	margin-top: 2em;
-	margin-left: 6.5em;
+	display: flex;
+	justify-content: flex-start;
+	// margin-top: 2em;
+	// margin-left: 1em;
 	letter-spacing: 0.472rem;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -118,401 +126,151 @@ h5 {
 }
 
 // HOME///////////
-.main-home {
-	.hero {
+
+// DESTINATION///////////////////
+
+
+// CREW///////////////////////////////////////
+
+
+
+// TECHNOLOGY/////////////////////////////
+
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+	.main-home {
+		background-image: url('../assets/home/background-home-tablet.jpg');
+	}
+
+	.destination {
+		background-image: url('../assets/destination/background-destination-tablet.jpg');
+	}
+
+	.crew {
+		background-image: url('../assets/crew/background-crew-tablet.jpg');
+	}
+
+	.technology {
+		background-image: url('../assets/technology/background-technology-tablet.jpg');
+	}
+
+	h1 {
+		font-size: 15rem;
+	}
+
+	h2 {
+		font-size: 10rem;
+	}
+
+	h3 {
+		font-size: 5.6rem;
+	}
+
+	h4 {
+		font-size: 3.2rem;
+	}
+
+	h5 {
+		font-size: 2rem;
+	}
+
+	.main-home,
+	.crew,
+	.destination,
+	.technology {
+		position: relative;
 		display: flex;
-		justify-content: space-evenly;
-		align-items: flex-end;
-		margin: 22em 0 8em 0;
+		// flex-direction: column;
+		justify-content: center;
 
-		&__text {
-			display: flex;
+		// height: 100%;
+
+		width: 100vw;
+	}
+
+	.main-home {
+		.hero {
 			flex-direction: column;
-			// width: 50%;
-			max-width: 445px;
+			align-items: center;
+			justify-content: center;
 
-			h1 {
-				text-transform: uppercase;
-				font-family: 'Bellefair', serif;
-				font-weight: 150;
-				color: #fff;
-			}
+			&__text {
+				text-align: center;
+				margin-bottom: 158px;
 
-			h5 {
-				text-transform: uppercase;
-				font-weight: 200;
-				letter-spacing: 0.15em;
-				color: var(--grey-blue);
-			}
-
-			&--description {
-				font-weight: 200;
-				font-family: 'Barlow', sans-serif;
-				font-size: 1.8rem;
-				color: var(--grey-blue);
-				// max-width: 445px;
-			}
-		}
-
-		&__button {
-			position: relative;
-			display: flex;
-			max-width: 450px;
-
-			.circle-btn {
-				position: relative;
-				font-family: 'Bellefair', serif;
-				font-size: 3.2rem;
-				letter-spacing: 0.2rem;
-				text-transform: uppercase;
-				background-color: #fff;
-				width: 274px;
-				height: 274px;
-				border-radius: 50%;
-				z-index: 200;
-
-				&::before {
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 0;
-					transform: translate(-20%, -20%);
-					border-radius: 50%;
-					background-color: #ffffff3d;
-					z-index: -100;
-					transition: 0.2s all;
+				&--description {
+					font-size: 1.6rem;
+					line-height: 28px;
 				}
+			}
 
-				&:hover::before {
-					width: 450px;
-					height: 450px;
-				}
+			&__button {
+				align-self: center;
+				margin-bottom: 90px;
 			}
 		}
 	}
-}
-// DESTINATION///////////////////
-.destination {
-	position: relative;
 
+	// overflow: hidden;
 	.planets {
-		position: relative;
-		display: flex;
-		justify-content: space-evenly;
+		flex-direction: column;
 		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		// padding-top: 1em;
+		// padding-bottom: 3em;
+		// height: 100%;
 
 		.left-side {
-			position: relative;
-			display: flex;
+			width: 100%;
+			// padding-top: 8em;
+			// flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			.pick,
+			.meet {
+				position: fixed;
+				// dodano posf
 
-			.planet-nav {
-				&__nav {
-					&--item {
-						font-size: 1.6rem;
-						text-transform: uppercase;
-					}
-				}
+				// zrobić porządek z paddingami itd
+				// tak żeby napis był w stałym miejscu
+				top: 2em;
+				padding-top: 5em;
+				margin-left: 6em;
 			}
-
 			&__planet-img {
 				position: relative;
 				display: flex;
 				background-position: center;
 				background-repeat: no-repeat;
+				
 				width: 445px;
 				height: 445px;
-				margin-top: 97px;
 			}
 		}
 
 		.right-side {
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			width: 44.5rem;
-			height: 47.2rem;
+			// flex-direction: row;
+			align-items: center;
+			width: 100vw !important;
 			margin-top: 64px;
+			padding-left: 90px;
+			padding-right: 90px;
+			padding-bottom: 6em;
 
 			.subnav {
 				position: relative;
 
 				&__nav {
-					position: relative;
-					display: flex;
-
-					&--item {
-						position: relative;
-						margin-right: 1.5em;
-						margin-bottom: 37px;
-						letter-spacing: 0.27rem;
-						color: white;
-						text-transform: uppercase;
-						background-color: transparent;
-						text-decoration: none;
-						padding-bottom: 18px;
-						cursor: pointer;
-
-						&::before {
-							content: '';
-							position: absolute;
-							top: 1.8em;
-							height: 3px;
-							width: 100%;
-							background-color: #979797;
-							opacity: 0;
-							transition: 0.2s all;
-						}
-
-						&:hover::before {
-							opacity: 1;
-						}
-					}
+					justify-content: center;
 				}
-			}
-
-			&__planet-name {
-				font-family: 'Bellefair', serif;
-				font-weight: normal;
-				text-transform: uppercase;
 			}
 
 			&__description {
-				font-size: 1.8rem;
-				font-family: 'Barlow', sans-serif;
-				font-weight: normal;
-				line-height: 3.2rem;
-				letter-spacing: 0.1rem;
-				margin-bottom: 5.4rem;
-				margin-top: 1.4rem;
-			}
-
-			.planets-line {
-				position: relative;
-				width: 100%;
-				height: 0.1rem;
-				background-color: #383b4b;
-			}
-
-			.distance {
 				position: relative;
 				display: flex;
-
-				&__time {
-					margin-left: 79px;
-				}
-
-				&__avg,
-				&__time {
-					position: relative;
-					display: flex;
-					flex-direction: column;
-					gap: 1.2rem;
-					margin-top: 2.8rem;
-
-					&--text {
-						font-size: 1.4rem;
-						font-weight: normal;
-						text-transform: uppercase;
-						// letter-spacing: 2.36px;
-						letter-spacing: 0.236rem;
-					}
-
-					&--number {
-						font-family: 'Bellefair', serif;
-						font-weight: normal;
-						font-size: 2.8rem;
-						text-transform: uppercase;
-					}
-				}
-			}
-		}
-	}
-}
-
-// CREW///////////////////////////////////////
-
-.crew {
-	position: relative;
-	overflow: hidden;
-
-	.members {
-		position: relative;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-
-		&__left {
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			margin-left: 6.5em;
-			// margin-right: 81px;
-
-			&--position {
-				margin-top: 69px;
-				font-family: 'Bellefair', serif;
-				font-weight: normal;
-				text-transform: uppercase;
-				color: var(--underline-hover);
-			}
-
-			&--name {
-				margin-top: 15px;
-				font-family: 'Bellefair', serif;
-				font-weight: normal;
-				text-transform: uppercase;
-			}
-			&--text {
-				margin-top: 27px;
-				margin-bottom: 120px;
-				width: 444px;
-			}
-			.description {
-				padding-right: 3em;
-				font-family: 'Barlow', sans-serif;
-				font-weight: normal;
-				font-size: 1.6rem;
-				line-height: 3.2rem;
-			}
-
-			.buttons {
-				display: flex;
-				justify-content: space-between;
-				width: 132px;
-
-				.memberBtn {
-					width: 15px;
-					height: 15px;
-					padding: 0.2em;
-					border-radius: 50%;
-					background-color: #979797;
-					cursor: pointer;
-					transition: 0.3s background-color;
-				}
-
-				.memberBtn:hover {
-					background-color: #d4d4d4;
-				}
-
-				.active {
-					background-color: #fff;
-				}
-			}
-		}
-
-		&__right {
-			// margin-top: 20px;
-			&--member-img {
-				position: relative;
-				display: flex;
-				align-self: start;
-				margin-right: 137px;
-				background-position-y: bottom 20px;
-				// background-position: top 50%;
-				background-repeat: no-repeat;
-				// scale: 100%;
-				height: 712px;
-				// width: 568.07px;
-			}
-		}
-	}
-}
-
-// TEHCNOLOGY/////////////////////////////
-
-.technology {
-	position: relative;
-	overflow: hidden;
-
-	.main {
-		position: relative;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-
-		&__left {
-			position: relative;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			margin-top: 137px;
-			margin-left: 10.5em;
-
-			&--buttons {
-				position: relative;
-				display: flex;
-				flex-direction: column;
-				gap: 32px;
-				// margin-left: 6.5em;
-
-				.circle {
-					width: 80px;
-					height: 80px;
-					border-radius: 50px;
-					border: 1px solid var(--underline-hover);
-					background-color: transparent;
-					font-family: 'Bellefair', serif;
-					font-weight: normal;
-					font-size: 3.2rem;
-
-					color: #fff;
-					transition: 0.3s border;
-					cursor: pointer;
-				}
-
-				.circle:hover {
-					border: 1px solid #fff;
-				}
-
-				.circle-active {
-					background-color: #fff;
-					color: #000;
-				}
-			}
-
-			&--text {
-				position: relative;
-				display: flex;
-				flex-direction: column;
-				width: 490px;
-				margin-left: 80px;
-
-				.terminology {
-					font-size: 1.6rem;
-					letter-spacing: 0.27rem;
-					text-transform: uppercase;
-					color: #d0d6f9;
-				}
-
-				.title {
-					font-family: 'Bellefair', serif;
-					font-weight: normal;
-					text-transform: uppercase;
-				}
-
-				.vehicle-description {
-					font-size: 1.8rem;
-					padding-right: 2.5em;
-					font-family: 'Barlow', sans-serif;
-					font-weight: normal;
-					color: #d0d6f9;
-					line-height: 3.2rem;
-				}
-			}
-		}
-
-		&__right {
-			position: relative;
-
-			&--vehicle-img {
-				position: relative;
-				display: flex;
-				background-position: center ;
-				background-repeat: no-repeat;
-				width: 100%;
-				height: 100%;
+				text-align: center;
 			}
 		}
 	}

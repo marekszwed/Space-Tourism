@@ -1,0 +1,98 @@
+.technology {
+	position: relative;
+	overflow: hidden;
+
+	.main {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__left {
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-top: 137px;
+			margin-left: 10.5em;
+
+			&--buttons {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				gap: 32px;
+				// margin-left: 6.5em;
+
+				.circle {
+					width: 80px;
+					height: 80px;
+					border-radius: 50px;
+					border: 1px solid var(--underline-hover);
+					background-color: transparent;
+					font-family: 'Bellefair', serif;
+					font-weight: normal;
+					font-size: 3.2rem;
+
+					color: #fff;
+					transition: 0.3s border;
+					cursor: pointer;
+				}
+
+				.circle:hover {
+					border: 1px solid #fff;
+				}
+
+				.circle-active {
+					background-color: #fff;
+					color: #000;
+				}
+			}
+
+			&--text {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+
+				width: 490px;
+				margin-left: 80px;
+
+				.terminology {
+					font-size: 1.6rem;
+					letter-spacing: 0.27rem;
+					text-transform: uppercase;
+					margin-bottom: 0.5em;
+					color: #d0d6f9;
+				}
+
+				.title {
+					font-family: 'Bellefair', serif;
+					font-weight: normal;
+					text-transform: uppercase;
+					margin-bottom: 0.3em;
+				}
+
+				.vehicle-description {
+					font-size: 1.8rem;
+					padding-right: 2.5em;
+					font-family: 'Barlow', sans-serif;
+					font-weight: normal;
+					color: #d0d6f9;
+					line-height: 3.2rem;
+				}
+			}
+		}
+
+		&__right {
+			position: relative;
+
+			&--vehicle-img {
+				position: relative;
+				display: flex;
+				background-position: center;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
