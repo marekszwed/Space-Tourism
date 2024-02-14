@@ -2,10 +2,10 @@ import jsonFile from '../files/data.json';
 
 const destinationNav: NodeList = document.querySelectorAll('.subnav__nav--item');
 
-let planetImage = document.querySelector('.left-side__planet-img') as HTMLImageElement;
+let planetImage = document.querySelector('.left-side__planet--img') as HTMLImageElement;
 
-const planetName = document.querySelector('.right-side__planet-name') as HTMLElement;
-const planetDescription = document.querySelector('.right-side__description') as HTMLElement;
+const planetName = document.querySelector('.right-side__planet--name') as HTMLElement;
+const planetDescription = document.querySelector('.right-side__planet--description') as HTMLElement;
 
 const avgDistance = document.querySelector('.distance__avg--number') as HTMLElement;
 const avgTime = document.querySelector('.distance__time--number') as HTMLElement; 
