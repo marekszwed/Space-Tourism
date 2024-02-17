@@ -38,6 +38,7 @@ body {
 .wrapper {
 	max-width: 1440px;
 	margin: 0 auto;
+	// height: 100%;
 	// width: 100%;
 }
 
@@ -125,18 +126,6 @@ h5 {
 	color: var(--underline-hover);
 }
 
-// HOME///////////
-
-// DESTINATION///////////////////
-
-
-// CREW///////////////////////////////////////
-
-
-
-// TECHNOLOGY/////////////////////////////
-
-
 
 @media (max-width: 1024px) and (min-width: 768px) {
 	.main-home {
@@ -181,97 +170,47 @@ h5 {
 	.technology {
 		position: relative;
 		display: flex;
-		// flex-direction: column;
 		justify-content: center;
-
-		// height: 100%;
-
-		width: 100vw;
-	}
-
-	.main-home {
-		.hero {
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-
-			&__text {
-				text-align: center;
-				margin-bottom: 158px;
-
-				&--description {
-					font-size: 1.6rem;
-					line-height: 28px;
-				}
-			}
-
-			&__button {
-				align-self: center;
-				margin-bottom: 90px;
-			}
-		}
-	}
-
-	// overflow: hidden;
-	.planets {
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin: 0 auto;
-		// padding-top: 1em;
-		// padding-bottom: 3em;
-		// height: 100%;
-
-		.left-side {
-			width: 100%;
-			// padding-top: 8em;
-			// flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			.pick,
-			.meet {
-				position: fixed;
-				// dodano posf
-
-				// zrobić porządek z paddingami itd
-				// tak żeby napis był w stałym miejscu
-				top: 2em;
-				padding-top: 5em;
-				margin-left: 6em;
-			}
-			&__planet-img {
-				position: relative;
-				display: flex;
-				background-position: center;
-				background-repeat: no-repeat;
-				
-				width: 445px;
-				height: 445px;
-			}
-		}
-
-		.right-side {
-			// flex-direction: row;
-			align-items: center;
-			width: 100vw !important;
-			margin-top: 64px;
-			padding-left: 90px;
-			padding-right: 90px;
-			padding-bottom: 6em;
-
-			.subnav {
-				position: relative;
-
-				&__nav {
-					justify-content: center;
-				}
-			}
-
-			&__description {
-				position: relative;
-				display: flex;
-				text-align: center;
-			}
-		}
+		height: 100%;
+		width: 100%;
 	}
 }
+
+@media (max-width: 768px) and (min-width: 375px) {
+	.main-home {
+		background-image: url('../assets/home/background-home-mobile.jpg');
+	}
+
+	.destination {
+		background-image: url('../assets/destination/background-destination-mobile.jpg');
+	}
+
+	.crew {
+		background-image: url('../assets/crew/background-crew-mobile.jpg');
+	}
+
+	.technology {
+		background-image: url('../assets/technology/background-technology-mobile.jpg');
+	}
+
+	h1 {
+		font-size: 15rem;
+	}
+
+	h2 {
+		font-size: 10rem;
+	}
+
+	h3 {
+		font-size: 5.6rem;
+	}
+
+	h4 {
+		font-size: 3.2rem;
+	}
+
+	h5 {
+		font-size: 2rem;
+	}
+}
+
