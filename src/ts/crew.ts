@@ -8,7 +8,7 @@ const circleBtns: NodeList = document.querySelectorAll('.memberBtn')
 const crewRole: HTMLHeadElement = document.querySelector('.members__left--position')!
 const memberName: HTMLHeadElement = document.querySelector('.members__left--name')!
 const description:HTMLParagraphElement = document.querySelector('.description')!
-const memberImg: HTMLImageElement = document.querySelector('.members__right--member-img')!
+const memberImg: HTMLImageElement = document.querySelector('.members__right-img')!
 
 
 
