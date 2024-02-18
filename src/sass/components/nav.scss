@@ -13,17 +13,18 @@
 	}
 
 	.logo {
-		padding: 4em 2em 2em 4em;
+		padding: 64px 55px 64px 55px;
 	}
 
 	.decoration-element {
-		position: relative;
-		top: 1em;
-		left: 13.5em;
+		position: absolute;
+		top: 5.5em;
+		left: 23.5em;
 		transform: translate(-50%, -50%);
 		width: 473px;
 		// width 473 px i zrobić to responsywne
 		border: 1px solid #ffffff2d;
+		z-index: 50;
 	}
 
 	.nav {
@@ -32,7 +33,7 @@
 		justify-content: space-around;
 		padding: 1em 8.8em 0 8.8em;
 		// margin: 1.3em 9em 0em 8em;
-		margin-top: 2em;
+		
 		// margin: 0;
 		gap: 52px;
 
