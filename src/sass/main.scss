@@ -30,29 +30,27 @@ html {
 body {
 	font-size: 1.6rem;
 	font-family: 'Barlow Condensed', sans-serif;
-	background-color: #0b0d17;
+	// background-color: #0b0d17;
 	color: white;
-	// height: 100vh;
+	height: 100vh;
+	// width: 100vw;
 }
 
 .wrapper {
 	max-width: 1440px;
 	margin: 0 auto;
-	// height: 100%;
-	// width: 100%;
+	width: 100%;
 }
 
 .main-home,
 .destination,
 .crew,
 .technology {
-	position: relative;
 	display: flex;
 	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
-	// flex-direction: column;
-	// width: 100vw;
-	height: 100vh;
+	min-height: 100%;
 }
 // backgrounds
 .main-home {
@@ -113,8 +111,6 @@ h5 {
 	position: relative;
 	display: flex;
 	justify-content: flex-start;
-	// margin-top: 2em;
-	// margin-left: 1em;
 	letter-spacing: 0.472rem;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -125,7 +121,6 @@ h5 {
 	font-weight: bold;
 	color: var(--underline-hover);
 }
-
 
 @media (max-width: 1024px) and (min-width: 768px) {
 	.main-home {
@@ -164,16 +159,6 @@ h5 {
 		font-size: 2rem;
 	}
 
-	.main-home,
-	.crew,
-	.destination,
-	.technology {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		height: 100%;
-		width: 100%;
-	}
 }
 
 @media (max-width: 768px) and (min-width: 375px) {
@@ -213,4 +198,3 @@ h5 {
 		font-size: 2rem;
 	}
 }
-
