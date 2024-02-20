@@ -3,14 +3,15 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 auto;
-	padding-top: 13em;
 
 	.hero {
 		position: relative;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		width: 100%;
+		padding-bottom: 6em;
+		padding-top: 22em;
+		margin-inline: 9em;
 
 		&__text {
 			display: flex;
@@ -38,7 +39,6 @@
 				font-family: 'Barlow', sans-serif;
 				font-size: 1.8rem;
 				color: var(--grey-blue);
-				// max-width: 445px;
 			}
 		}
 
@@ -83,12 +83,10 @@
 
 @media (max-width: 1024px) and (min-width: 768px) {
 	.main-home {
-		// height: 100vh;
 		.hero {
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
-			height: 100vh;
 
 			&__text {
 				text-align: center;
@@ -116,20 +114,26 @@
 
 @media (max-width: 767px) and (min-width: 375px) {
 	.main-home {
-		// height: 100vh;
+		overflow: hidden;
+
 		.hero {
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
-			height: 100vh;
+			margin: 0 auto;
 
 			&__text {
 				text-align: center;
-				margin-bottom: 158px;
+				margin-bottom: 81px;
 				margin-top: 73px;
 
-				&--description {
-					font-size: 1.6rem;
+				&--title {
+					font-size: 8rem;
+				}
+
+				&--description {					
+					padding-inline: 2em;
+					font-size: 1.5rem;
 					line-height: 28px;
 				}
 			}
