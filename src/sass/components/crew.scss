@@ -2,31 +2,31 @@
 	position: relative;
 	display: flex;
 	justify-content: flex-end;
-	// overflow: hidden;
-
-	// .meet-crew {
-	// 	position: relative;
-	// 	display: flex;
-	// 	top: 7em;
-	// }
 
 	.members {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
-		margin-left: 4em;
-		gap: 8.1em;
+		margin: 0 auto;
+		height: 100%;
+		width: 100%;
 
 		&__left {
 			position: relative;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-
-			margin-left: 6.5em;
-			// padding-bottom: 2em;
+			justify-content: flex-start;
 			// margin-right: 81px;
+			margin-left: 135px;
+
+			.meet-crew {
+				position: relative;
+				margin-top: 212px;
+				margin-bottom: 154px;
+				margin-left: 5px;
+			}
 
 			&--position {
 				margin-top: 69px;
@@ -34,6 +34,7 @@
 				font-weight: normal;
 				text-transform: uppercase;
 				color: var(--underline-hover);
+				margin-left: 5px;
 			}
 
 			&--name {
@@ -41,17 +42,18 @@
 				font-family: 'Bellefair', serif;
 				font-weight: normal;
 				text-transform: uppercase;
+				margin-left: 5px;
 			}
 			&--text {
 				margin-top: 27px;
-				margin-bottom: 120px;
-				width: 444px;
+				margin-bottom: 70px;
+				height: 160px;
+				width: 460px;
 			}
 			.description {
-				padding-right: 3em;
 				font-family: 'Barlow', sans-serif;
 				font-weight: normal;
-				font-size: 1.6rem;
+				font-size: 1.8rem;
 				line-height: 3.2rem;
 			}
 
@@ -59,12 +61,12 @@
 				display: flex;
 				justify-content: space-between;
 				width: 132px;
-				margin-bottom: 2em;
+				margin-bottom: 94px;
 
 				.memberBtn {
 					width: 15px;
 					height: 15px;
-					padding: 0.2em;
+					padding: 0.4em;
 					border-radius: 50%;
 					background-color: #979797;
 					cursor: pointer;
@@ -81,19 +83,132 @@
 			}
 		}
 
-		&__right {
-			// margin-top: 20px;
-			&--member-img {
-				position: relative;
-				display: flex;
-				// align-self: flex-start;
-				margin-right: 137px;
-				// background-position-y: bottom 20px;
-				// background-position: top 50%;
-				background-repeat: no-repeat;
-				// scale: 100%;
-				// height: 712px;
-				// width: 568.07px;
+		&__right-img {
+			position: relative;
+			margin-right: 150px;
+		}
+	}
+}
+
+@media (max-width: 1393px) and (min-width: 1214px) {
+	.crew {
+		.members__left {
+			margin-left: 55px;
+		}
+
+		.members__right-img {
+			margin-right: 50px;
+		}
+	}
+}
+
+@media (max-width: 1213px) and (min-width: 1100px) {
+	.crew {
+		.members__left {
+			margin-left: 20px;
+
+			.meet-crew {
+				margin-left: 35px;
+			}
+		}
+
+		.members__right-img {
+			margin-right: 20px;
+		}
+	}
+}
+
+@media (max-width: 1100px) and (min-width: 1024px) {
+	.crew {
+		.members {
+			flex-direction: column;
+			justify-content: center;
+
+			&__left {
+				margin: 0 auto;
+				width: 100%;
+				text-align: center;
+
+				.meet-crew {
+					margin-bottom: 50px;
+					margin-left: 55px;
+				}
+
+				&--position {
+					margin-top: 10px;
+					margin-inline: 0;
+					align-self: center;
+				}
+
+				&--name {
+					align-self: center;
+				}
+
+				&--text {
+					align-self: center;
+					margin-bottom: 40px;
+					width: 100%;
+					padding-inline: 11.5em;
+				}
+
+				.buttons {
+					align-self: center;
+					margin-bottom: 40px;
+				}
+			}
+
+			&__right-img {
+				margin: 0 auto;
+				height: 572px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+	.crew {
+		.members {
+			flex-direction: column;
+			justify-content: center;
+
+			&__left {
+				margin: 0 auto;
+				width: 100%;
+				text-align: center;
+
+				.meet-crew {
+					margin-top: 138px;
+					margin-bottom: 50px;
+					margin-left: 39px;
+				}
+
+				&--position {
+					margin-top: 10px;
+					margin-inline: 0;
+					align-self: center;
+				}
+
+				&--name {
+					align-self: center;
+				}
+
+				&--text {
+					align-self: center;
+					margin-bottom: 40px;
+					width: 781px;
+					padding-inline: 5em;
+				}
+
+				.buttons {
+					align-self: center;
+					margin-bottom: 40px;
+				}
+			}
+
+			&__right-img {
+				margin: 0 auto;
+				height: 572px;
+				// width: 100%;
 			}
 		}
 	}
