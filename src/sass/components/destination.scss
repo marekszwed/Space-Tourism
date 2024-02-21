@@ -1,5 +1,4 @@
 .destination {
-	
 	.planets {
 		position: relative;
 		display: flex;
@@ -51,10 +50,10 @@
 
 					&--item {
 						position: relative;
-
 						margin-right: 1.5em;
 						margin-bottom: 37px;
 						letter-spacing: 0.27rem;
+						font-size: 1.6rem;
 						color: white;
 						text-transform: uppercase;
 						background-color: transparent;
@@ -103,13 +102,11 @@
 				}
 			}
 
-			.planets-line {
+			.line {
 				position: relative;
 				display: inline-block;
-
 				width: 80%;
 				height: 0.1rem;
-				// margin-bottom: 2em;
 				background-color: #383b4b;
 			}
 
@@ -125,7 +122,6 @@
 					display: flex;
 					flex-direction: column;
 					gap: 1.2rem;
-					// margin-top: 2.8rem;
 					margin-bottom: 118px;
 					width: 50%;
 
@@ -133,7 +129,6 @@
 						font-size: 1.4rem;
 						font-weight: normal;
 						text-transform: uppercase;
-						// letter-spacing: 2.36px;
 						letter-spacing: 0.236rem;
 					}
 
@@ -188,6 +183,7 @@
 
 					&__nav {
 						justify-content: center;
+						
 					}
 				}
 
@@ -196,8 +192,8 @@
 						position: relative;
 						display: flex;
 						text-align: center;
-						padding-left: 2em;
-						padding-right: 2em;
+						padding-inline: 2.5em;
+						font-size: 1.6rem;
 						-webkit-line-clamp: 3; /* number of lines to show */
 						line-clamp: 3;
 						-webkit-box-orient: vertical;
@@ -208,9 +204,17 @@
 					justify-content: center;
 					width: 50%;
 
-					&__avg, 
+					&__avg,
 					&__time {
 						text-align: center;
+
+						&--text {
+							font-size: 1.4rem;
+						}
+
+						&--number {
+							font-size: 2.8rem;
+						}
 					}
 				}
 			}
@@ -220,7 +224,6 @@
 
 @media (max-width: 768px) and (min-width: 365px) {
 	.destination {
-		
 		.planets {
 			flex-direction: column;
 			align-items: center;
@@ -230,13 +233,14 @@
 
 			.left-side {
 				margin-top: 5em;
-				
 				width: 100%;
-				// padding-top: 15em;
+				padding-top: 0;
 				justify-content: center;
 				align-items: center;
 				&__number {
+					margin-top: 20px;
 					.pick {
+						
 						position: relative;
 					}
 				}
@@ -261,6 +265,7 @@
 
 					&__nav {
 						justify-content: center;
+						
 					}
 				}
 
@@ -269,10 +274,11 @@
 						position: relative;
 						display: flex;
 						text-align: center;
-						padding-left: 2em;
-						padding-right: 2em;
+						font-size: 1.5rem;
+						padding-inline: 5.5em;
 						-webkit-line-clamp: 3; /* number of lines to show */
 						line-clamp: 3;
+
 						-webkit-box-orient: vertical;
 					}
 				}
@@ -283,13 +289,19 @@
 					align-items: center;
 					width: 100%;
 
-					&__avg, 
+					&__avg,
 					&__time {
 						text-align: center;
 						margin-bottom: 32px;
-					}
 
-					
+						&--text {
+							font-size: 1.4rem;
+						}
+
+						&--number {
+							font-size: 2.8rem;
+						}
+					}
 				}
 			}
 		}
