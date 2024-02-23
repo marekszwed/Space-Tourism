@@ -186,6 +186,7 @@
 					margin-top: 10px;
 					margin-inline: 0;
 					align-self: center;
+					font-size: 2.4rem;
 				}
 
 				&--name {
@@ -195,13 +196,21 @@
 				&--text {
 					align-self: center;
 					margin-bottom: 40px;
-					width: 781px;
-					padding-inline: 5em;
+					width: 600px;
+					padding-inline: 0.5em;
+				}
+
+				.description {
+					font-size: 1.6rem;
 				}
 
 				.buttons {
 					align-self: center;
 					margin-bottom: 40px;
+
+					.memberBtn {
+						height: 10px;
+					}
 				}
 			}
 
@@ -209,6 +218,92 @@
 				margin: 0 auto;
 				height: 572px;
 				// width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+	.crew {
+		.members {
+			flex-direction: column-reverse;
+			justify-content: center;
+
+			&__left {
+				margin: 0 auto;
+				width: 100%;
+				text-align: center;
+
+				.meet-crew {
+					position: fixed;
+					display: inline-block;
+					top: 0;
+					left: 0;
+					right: 0;
+					margin-top: 88px;
+					margin-bottom: 50px;
+					margin-inline: 0;
+				}
+
+				.number {
+					margin-right: 16px;
+				}
+
+				&--position {
+					margin-top: 76px;
+					margin-inline: 0;
+					align-self: center;
+					font-size: 1.6rem;
+				}
+
+				&--name {
+					align-self: center;
+					font-size: 2.4rem;
+					font-family: 'Bellefair', serif;
+					font-weight: normal;
+					margin-inline: 0;
+				}
+
+				&--text {
+					align-self: center;
+					margin-bottom: 40px;
+					width: 90%;
+					padding-inline: 0.5em;
+				}
+
+				.description {
+					font-size: 1.5rem;
+				}
+
+				.buttons {
+					position: fixed;
+					display: inline-flex;
+
+					align-self: center;
+					margin-top: 32px;
+					margin-bottom: 40px;
+
+					.memberBtn {
+						height: 10px;
+					}
+				}
+
+				.crew-line {
+					position: absolute;
+					display: inline-block;
+					align-self: center;
+					margin-bottom: 5em;
+					width: 85%;
+					height: 0.1rem;
+					background-color: #383b4b;
+				}
+			}
+
+			&__right-img {
+				align-self: center;
+				margin-top: 139px;
+				margin-inline: 0;
+				height: 223px;
 			}
 		}
 	}
