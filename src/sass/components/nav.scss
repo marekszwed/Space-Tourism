@@ -130,9 +130,18 @@
 			background-color: transparent;
 			z-index: 500;
 			cursor: pointer;
+
+			&__open, &__close {
+				height: 21px;
+				width: 24px;
+			}
 		}
 		.logo {
 			padding: 24px 39px 24px 39px;
+
+			&__img {
+				height: 40px;width: 40px;
+			}
 		}
 
 		.nav {
