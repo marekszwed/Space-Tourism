@@ -151,23 +151,28 @@
 			align-items: center;
 			justify-content: center;
 			margin: 0 auto;
+			padding-top: 0;
 
 			.left-side {
 				width: 100%;
-				padding-top: 9em;
 				justify-content: center;
 				align-items: center;
 				&__number {
+					position: absolute;
+					top: 135px;
+					left: 39px;
 					.pick {
 						position: relative;
+						padding-bottom: 0;
 					}
 				}
 
 				&__planet {
+					padding-top: 9em;
 					&--img {
-						margin-left: 0;
 						width: 300px;
 						height: 300px;
+						margin-left: 0;
 					}
 				}
 			}
@@ -183,7 +188,6 @@
 
 					&__nav {
 						justify-content: center;
-						
 					}
 				}
 
@@ -240,7 +244,6 @@
 				&__number {
 					margin-top: 20px;
 					.pick {
-						
 						position: relative;
 					}
 				}
@@ -265,7 +268,6 @@
 
 					&__nav {
 						justify-content: center;
-						
 					}
 				}
 
